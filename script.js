@@ -1,4 +1,4 @@
-
+var addedProjectIndicator = document.querySelector(".local-storage-indicator")
 
 
 //update day and date when application is opened

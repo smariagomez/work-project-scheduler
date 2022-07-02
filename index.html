@@ -21,11 +21,85 @@
   </header>
   <main>
   <div>
-    <h2 id="local-storage-indicator">Appointment Added to local storage</h2>
+    <h3 id="local-storage-indicator">Appointment Added to local storage</h3>
   </div>
-  <div class="container">
-
-    <!-- Timeblocks go here -->
+  <div class="container" col-12 col-lg-6>
+    <table id="schedule-table" class="table caption-top">
+        <thead>
+          <!--consider deleting the headers, example does not have any headers-->
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Project/Activity</th>
+            <th scope="col">Save Project</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!--review how to write custom css to override bootstrap-->
+            <th scope="row">9AM</th>
+            <td></td>
+            <td>
+              <button id="saveBtnNine" class="saveBtn">Save</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">10AM</th>
+            <td></td>
+            <td>
+              <button id="saveBtnTen" class="saveBtn">Save</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">11AM</th>
+            <td></td>
+            <td>
+              <button id="saveBtnEleven" class="saveBtn">Save</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">12PM</th>
+            <td></td>
+            <td>
+              <button id="saveBtnNoon" class="saveBtn">Save</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">1PM</th>
+            <td></td>
+            <td>
+              <button id="saveBtnOne" class="saveBtn">Save</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2PM</th>
+            <td></td>
+            <td>
+              <button id="saveBtnTwo" class="saveBtn">Save</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3PM</th>
+            <td></td>
+            <td>
+              <button id="saveBtnThree" class="saveBtn">Save</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4PM</th>
+            <td></td>
+            <td>
+              <button id="saveBtnFour" class="saveBtn">Save</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">5PM</th>
+            <td></td>
+            <td>
+              <button id="saveBtnFive" class="saveBtn">Save</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
   </div>
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
