@@ -6,23 +6,32 @@ var saveBtnElevenEl = document.querySelector("#saveBtnEleven")
 var saveBtnNoonEl = document.querySelector("#saveBtnNoon")
 var saveBtnOneEl = document.querySelector("#saveBtnOne")
 var saveBtnTwoEl = document.querySelector("#saveBtnTwo")
-var saveBtnThreeEl = document.querySelector("#saveBtnThree") 
+var saveBtnThreeEl = document.querySelector("#saveBtnThree")
 var saveBtnFourEl = document.querySelector("#saveBtnFour")
 var saveBtnFiveEl = document.querySelector("#saveBtnFive")
-//var inputNineEl = document.querySelector(".inputNine").value;
+var userinputNineSpan = document.querySelector(".span-nine")
+//var x = day.getHours()
+//console.log(x)
 
 
 //update day and date when application is opened
 var currentDayEl = moment().format("dddd, MMMM Do")
 $("#currentDay").text(currentDayEl);
-    //console.log(currentDayEl)
+//console.log(currentDayEl)
 
-//ability to write in text boxes-completed in HTML
+//retrieval of project input from local storage so info remains on page after page is refreshed/closed-reopened    
+//renderLastRegistered();
+
+//function renderLastRegistered(inputNineEl){
+//  var exsistingInputNine = localStorage.getItem("9am");
+//userinputNineSpan.textContent = inputNineEl;
+//}
+
 
 //button to save user input into local storage-completed
 //check indicator to alert user to when a new project has been saved-completed
-    //need to revert back to original text to after time inteval
-saveBtnNineEl.addEventListener("click", function(event){
+//addedProjectIndicator needs to revert back to original text to after time inteval
+saveBtnNineEl.addEventListener("click", function (event) {
     event.preventDefault();
     addedProjectIndicator.textContent = ("Project added" + str);
     var inputNineEl = document.querySelector(".inputNine").value;
@@ -31,7 +40,7 @@ saveBtnNineEl.addEventListener("click", function(event){
     console.log(inputNineEl)
 });
 
-saveBtnTenEl.addEventListener("click", function(event){
+saveBtnTenEl.addEventListener("click", function (event) {
     event.preventDefault();
     addedProjectIndicator.textContent = ("Project added" + str)
     var inputTenEl = document.querySelector(".inputTen").value;
@@ -39,50 +48,50 @@ saveBtnTenEl.addEventListener("click", function(event){
     console.log(inputTenEl)
 
 });
-saveBtnElevenEl.addEventListener("click", function(event){
+saveBtnElevenEl.addEventListener("click", function (event) {
     event.preventDefault();
     addedProjectIndicator.textContent = ("Project added" + str);
     var inputElevenEl = document.querySelector(".inputEleven").value;
     localStorage.setItem("11am", inputElevenEl);
     console.log(inputElevenEl)
-    
+
 });
-saveBtnNoonEl.addEventListener("click", function(event){
+saveBtnNoonEl.addEventListener("click", function (event) {
     event.preventDefault();
     addedProjectIndicator.textContent = ("Project added" + str);
     var inputNoonEl = document.querySelector(".inputNoon").value;
     localStorage.setItem("12pm", inputNoonEl);
     console.log(inputNoonEl)
 });
-saveBtnOneEl.addEventListener("click", function(event){
+saveBtnOneEl.addEventListener("click", function (event) {
     event.preventDefault();
     addedProjectIndicator.textContent = ("Project added" + str);
     var inputOneEl = document.querySelector(".inputOne").value;
     localStorage.setItem("1pm", inputOneEl);
     console.log(inputOneEl)
 });
-saveBtnTwoEl.addEventListener("click", function(event){
+saveBtnTwoEl.addEventListener("click", function (event) {
     event.preventDefault();
     addedProjectIndicator.textContent = ("Project added" + str);
     var inputTwoEl = document.querySelector(".inputTwo").value;
     localStorage.setItem("2pm", inputTwoEl);
     console.log(inputTwoEl)
 });
-saveBtnThreeEl.addEventListener("click", function(event){
+saveBtnThreeEl.addEventListener("click", function (event) {
     event.preventDefault();
     addedProjectIndicator.textContent = ("Project added" + str);
     var inputThreeEl = document.querySelector(".inputThree").value;
     localStorage.setItem("3pm", inputThreeEl);
     console.log(inputThreeEl)
 });
-saveBtnFourEl.addEventListener("click", function(event){
+saveBtnFourEl.addEventListener("click", function (event) {
     event.preventDefault();
     addedProjectIndicator.textContent = ("Project added" + str);
     var inputFourEl = document.querySelector(".inputFour").value;
     localStorage.setItem("4pm", inputFourEl);
     console.log(inputFourEl)
 });
-saveBtnFiveEl.addEventListener("click", function(event){
+saveBtnFiveEl.addEventListener("click", function (event) {
     event.preventDefault();
     addedProjectIndicator.textContent = ("Project added" + str);
     var inputFiveEl = document.querySelector(".inputFive").value;

@@ -3,7 +3,8 @@ body {
     font-size: 16px;
     line-height: 1;
   }
-  /*added to HTML-input columns*/
+  /*added to HTML-input columns
+  Need to get user input to wrap and display all of the input*/
   .textarea {
     background: transparent;
     border: none;
@@ -11,6 +12,9 @@ body {
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
+    width: 100%;
+    /*overflow:visible*/
+    /*overflow-wrap: normal;*/
   }
   /*added to HTML w/starter code*/
   .jumbotron {
@@ -68,12 +72,12 @@ body {
     border-bottom-right-radius: 15px;
     background-color: #06aed5;
     color: white;
+    width: 70px;
+    height: 60px;
+
   }
   /*added to HTML*/
   .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
   }
-
-
-  
