@@ -3,8 +3,8 @@ body {
     font-size: 16px;
     line-height: 1;
   }
-  
-  textarea {
+  /*added to HTML-input columns*/
+  .textarea {
     background: transparent;
     border: none;
     resize: none;
@@ -12,7 +12,7 @@ body {
     border-left: 1px solid black;
     padding: 10px;
   }
-  
+  /*added to HTML w/starter code*/
   .jumbotron {
     text-align: center;
     background-color: transparent;
@@ -20,15 +20,16 @@ body {
     border-radius: 0;
     border-bottom: 10px solid black;
   }
+  /*element to be updated when new projects are saved*/
   h3 {
     font-size: 17px;
     text-align: center;
-
   }
+/*should this style be added to textarea?*/
   .description {
     white-space: pre-wrap;
   }
-  
+  /*added to time column ?ould this be condensed to tr th? vs adding css to every time column individually?*/
   .time-block {
     text-align: center;
     border-radius: 15px;
@@ -60,7 +61,7 @@ body {
     background-color: #77dd77;
     color: white;
   }
-  
+  /*added to HTML*/
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
@@ -68,9 +69,11 @@ body {
     background-color: #06aed5;
     color: white;
   }
-  
+  /*added to HTML*/
   .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
   }
+
+
   
