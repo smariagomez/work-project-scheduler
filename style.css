@@ -3,6 +3,7 @@ body {
     font-size: 16px;
     line-height: 1;
   }
+ 
   /*added to HTML-input columns
   Need to get user input to wrap and display all of the input*/
   .textarea {
@@ -28,6 +29,12 @@ body {
   h3 {
     font-size: 17px;
     text-align: center;
+  }
+
+  h4 {
+    margin-left: 20px;
+    font-size: 20px;
+    color: gray;
   }
 /*should this style be added to textarea?*/
   .description {
