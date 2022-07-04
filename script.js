@@ -139,3 +139,11 @@ saveBtnFiveEl.addEventListener("click", function (event) {
 
 //rows to change color to indicate if time slot is past/present/future
     //if, else if, else argument?
+
+ var currentTime = moment().format("HH")
+ //function colorCode (){
+    if (currentTime >= 9 && currentTime <= 17){
+        $(".hour").addClass(".past");
+    } else if (currentTime < 9){}
+ console.log(currentTime)
+ //}
